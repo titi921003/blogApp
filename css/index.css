@@ -1,0 +1,254 @@
+/*引入阿里巴巴icon*/
+@font-face {
+  font-family: 'iconfont';  /* project id 590862 */
+  src: url('http://at.alicdn.com/t/font_590862_8n8fjg76sv3ivn29.eot');
+  src: url('http://at.alicdn.com/t/font_590862_8n8fjg76sv3ivn29.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_590862_8n8fjg76sv3ivn29.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_590862_8n8fjg76sv3ivn29.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_590862_8n8fjg76sv3ivn29.svg#iconfont') format('svg');
+}
+/*定义icon样式*/
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    }
+    
+/*开始页面布局*/
+.top-ad{
+	height: .6rem;
+	font-size: .17rem;
+	position: relative;
+}
+.top-ad-font{
+	position: absolute;
+	top: .04rem;right: .05rem;
+	width: .26rem;height: .14rem;
+	line-height: .14rem;
+	border-radius: 15%;
+	text-shadow: .01rem 0 #000;
+	background-color: rgba(0,0,0,.18);
+	color: #fff;
+	font-size: .10rem;
+	text-align: center;
+}
+header{
+	clear: both;
+	padding: 0 .1rem;
+	height: .44rem;
+	text-align: center;
+	background: linear-gradient(40deg,#838dfb,#8191f8 10%,#4fa2f1 50%,#1eabf6);
+	color: #fff;
+}
+header .left{
+	float:left;
+	margin-top: .03rem;
+	width: .4rem; 
+	height: .4rem;
+	color: #fff;	
+	line-height: .4rem;
+}
+header .left i{
+	display: block;
+	font-size: .32rem;
+}
+header .mid{
+	position: relative;
+	float:left;
+	height: .44rem;
+	padding-left: .1rem;
+	margin-left: .1rem;
+}
+header .mid a{
+	display: block;
+	font-size: .2rem;
+	cursor: pointer;
+	color: #fff;
+	line-height: .4rem;
+}
+header .mid:before {
+    position: absolute;
+    left: 0;
+    top: .11rem;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: .21rem;
+    background: hsla(0,0%,100%,.15);
+}
+header .right{
+	float: right;
+	margin-top: .1rem;
+	width: .24rem; height: .24rem;
+	background: red;
+}
+header .right-right{
+	float: right;
+	margin: .12rem .20rem 0 0;
+	padding: .01rem .02rem .02rem .2rem;
+	position: relative;
+	    background: #6dbfff;
+	border-radius: .16rem;
+}
+header .right-right:before{
+    content: "";
+    display: block;
+    height: .16rem;
+    width: .16rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: .02rem;
+    top: .02rem;
+}
+header .right-right span{
+	font-size: .11rem;
+	line-height: .18rem;
+	display: none;
+}
+header .right-right .active{
+	font-size: .11rem;
+	line-height: .18rem;
+	display: block;
+}
+.layout-wrap{
+	background: #fff;
+	position: relative;
+}
+.layout-wrap:before{
+	position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: inline-block;
+    height: .01rem; width: 100%;
+    background: hsla(0,0%,100%,.15);
+}
+.box1{
+	overflow: hidden;
+	height: .295rem; 
+	padding: 0 .05rem .09rem 0;
+	background: url(../img/layout-bg.png) left -.88rem no-repeat #299df2;
+    background-size: 100% auto;
+}
+nav .container{
+	margin-top: .08rem;
+	text-align: center;
+}
+nav ul{
+	display: flex;
+}
+nav li,a{
+	display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    white-space: nowrap;
+	font-size: .17rem;
+	height: .25rem;
+	color: #fff;
+}
+nav span{
+	font-size: .17rem;
+}
+.login{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: .08rem;
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+}
+.login .left{
+	float: left;
+	padding-left: .1rem;
+	height: .4rem;
+	line-height: .4rem;
+    color: #008af5;
+    font-size: .12rem;
+}
+.login .right{
+	float: right;
+	padding-right: .1rem;
+	height: .4rem;
+	line-height: .4rem;
+    color: #008af5;
+    font-size: .12rem;
+}
+.banner{
+	margin: 0 .1rem;
+	padding-top: .1rem;
+	height: 1.7rem; 
+	position: relative;
+}
+.banner-introduce{
+	width: 100%;
+	position: absolute;
+	bottom: .08rem;
+	left: .1rem;
+	color: #fff;
+}
+.banner-introduce span{
+	display: block;
+	float: left;
+	font-size: .16rem;
+	font-weight: 400;
+	vertical-align: bottom;
+}
+.banner-introduce .active{
+	float: right;
+	margin-right: .2rem;
+	
+}
+
+.widget{
+	margin:0 .1rem;
+	padding: .11rem 0;
+	height: .67rem;
+	border-bottom: 1px solid #e4e4e4;;
+}
+.widget .left{
+	float: left;
+	width: 1rem; height: .67em;
+	overflow: hidden;
+}
+.widget .right{
+	float: right;
+	width: 2.42rem;
+}
+figure{
+	width: 1rem; height: .67em;
+	margin-right: .13rem;
+}
+img{
+	display: block;
+}
+aside{
+	margin-top: -.02rem;
+}
+blockquote{
+	margin-top: .04rem;
+}
+h2{
+	font-size: .17rem;
+	font-weight: 400;
+}
+.widget em{
+	display: block;
+	float: left;
+	margin-right: .05rem;
+}
+cite{
+	float: left;
+}
+.widget span{
+	color: #888;
+	font-style: normal;
+	display: block;
+	float: left;
+	font-size: .13rem;
+	vertical-align: middle;
+	padding: 0 0 0 1px
+}
